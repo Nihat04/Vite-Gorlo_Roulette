@@ -1,25 +1,24 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
-import Roulette from '../Roulette/Roulette'
-// import { readJson } from "../../scripts/jsonReader";
+import MovieSpinner from './MovieSpinner/MovieSpinner';
 
 const RoulettePage = () => {
 
-    const [movies, setMovies] = useState({});
+    const [account, setAccount] = useState({});
   
     useEffect(() => {
-      const fetchMovies = async () => {
-        const response = await fetch('/public/db/nihat_nastya.json');
+      const fetchUser = async () => {
+        const response = await fetch('/db/nihat_nastya.json');
         const result = await response.json();
-        setMovies(result);
+        setAccount(result);
       }
   
-      fetchMovies()
+      fetchUser()
     }, []);
 
   return (
     <>
-        <Roulette movies={movies} />
+      <MovieSpinner movies={account.movies} />
     </>
   )
 }
