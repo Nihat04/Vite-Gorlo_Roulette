@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    max-height: 50px;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.beta-logo {
+    padding: 5px 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 7px;
+    background: #333;
+}

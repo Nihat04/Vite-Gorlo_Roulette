@@ -1,0 +1,94 @@
+{
+    "name": "Нихат Настя",
+    "password": "goodPassword",
+    "movies": {
+        "user1": [
+            {
+                "id": 0,
+                "name": "Хоримия",
+                "type": "movie",
+                "episode": {
+                    "current": 0,
+                    "total": 1
+                },
+                "watchStatus": false,
+                "selected": true,
+                "priority": 0,
+                "customPercentage": 0,
+                "note": ""
+            },
+            {
+                "id": 1,
+                "name": "Iron Man",
+                "type": "movie",
+                "episode": {
+                    "current": 0,
+                    "total": 1
+                },
+                "watchStatus": false,
+                "selected": true,
+                "priority": 0,
+                "customPercentage": 0,
+                "note": ""
+            },
+            {
+                "id": 2,
+                "name": "Iron Man 2",
+                "type": "movie",
+                "episode": {
+                    "current": 0,
+                    "total": 1
+                },
+                "watchStatus": false,
+                "selected": true,
+                "priority": 0,
+                "customPercentage": 0,
+                "note": ""
+            }
+        ],
+        "user2": [
+            {
+                "id": 3,
+                "name": "Шоколадная фабрика",
+                "type": "movie",
+                "episode": {
+                    "current": 0,
+                    "total": 1
+                },
+                "watchStatus": false,
+                "selected": true,
+                "priority": 0,
+                "customPercentage": 0,
+                "note": ""
+            },
+            {
+                "id": 4,
+                "name": "Ямада",
+                "type": "movie",
+                "episode": {
+                    "current": 0,
+                    "total": 1
+                },
+                "watchStatus": false,
+                "selected": true,
+                "priority": 0,
+                "customPercentage": 0,
+                "note": ""
+            },
+            {
+                "id": 5,
+                "name": "Рапунцель",
+                "type": "movie",
+                "episode": {
+                    "current": 0,
+                    "total": 1
+                },
+                "watchStatus": false,
+                "selected": true,
+                "priority": 0,
+                "customPercentage": 0,
+                "note": ""
+            }
+        ]
+    }
+}
