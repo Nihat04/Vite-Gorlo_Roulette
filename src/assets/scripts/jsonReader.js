@@ -1,6 +1,15 @@
-// import Path from 'path';
+export default class jsonReader {
+    static path = '/db/nihat_nastya.json';
 
-// export function readJson() {
-//     let jsonText = fetch("/db/nihat_nastya.json").then(response => response.json());
-//     return jsonText;
-// }
+    static getMovies = async () => {
+        if(!this.path) throw new Error('path is empty');
+
+        const response = await fetch(this.path);
+        const result = await response.json();
+        return result.movies;
+    }
+
+    static writeMovies(movies) {
+
+    }
+}

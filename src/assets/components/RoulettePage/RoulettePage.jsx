@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import MovieSpinner from './MovieSpinner/MovieSpinner';
+import MoviesTable from '../MoviesTable/MoviesTable';
 
 const RoulettePage = () => {
 
@@ -19,6 +20,7 @@ const RoulettePage = () => {
   return (
     <>
       <MovieSpinner movies={account.movies} />
+      <MoviesTable tableName='Список' />
     </>
   )
 }
