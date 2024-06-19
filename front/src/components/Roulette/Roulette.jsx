@@ -1,9 +1,6 @@
-import React from 'react';
 import styles from './Roulette.module.css';
 
-const Roulette = (props) => {
-    const { movies } = props;
-
+const Roulette = () => {
     return (
         <div className={styles['roulette']}>
             <h2 className={styles['winner__header']}>Мстители</h2>

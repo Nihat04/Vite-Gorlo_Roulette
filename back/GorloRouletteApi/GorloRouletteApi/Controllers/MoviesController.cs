@@ -59,7 +59,7 @@ namespace GorloRouletteApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutMovie(int id, Movie movie)
+        public async Task<IActionResult> PutMovie(int id, PutMovieDTO movie)
         {
             var userName = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var user = _context.Users.Include(user => user.Cinemas).FirstOrDefault(user => user.UserName == userName);
@@ -67,7 +67,9 @@ namespace GorloRouletteApi.Controllers
             if (user == null) return NotFound();
             if (!user.Cinemas.Any(userCinemas => userCinemas.CinemaId == movie.CinemaId)) return Unauthorized("Acces Denied");
 
-            _context.Update(movie);
+            var dbMovie = await _context.Movies.FindAsync(movie.Id);
+            dbMovie.Status = movie.Status;
+            dbMovie.Percentage = movie.Percentage;
             _context.SaveChanges();
 
             return Ok(movie);

@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import globalStyles from '../../App.module.css';
+import { useState } from 'react';
 import styles from './AuthorizationPage.module.css';
-import axios from 'axios';
 import { login } from '../../api/api';
 import HeaderLogo from '../../components/HeaderLogo/HeaderLogo';
+import { useNavigate } from 'react-router-dom';
 
 const AuthorizationPage = () => {
     let username = '';
     let password = '';
 
     const [errorMsg, setErrorMsg] = useState('');
+    const navigate = useNavigate();
 
     const authorize = async (e) => {
         e.preventDefault();
@@ -19,7 +19,9 @@ const AuthorizationPage = () => {
             return;
         }
 
-        login(username, password);
+        login(username, password)
+            .then(() => navigate('/cinema'))
+            .catch((err) => setErrorMsg(err.message));
     };
 
     return (

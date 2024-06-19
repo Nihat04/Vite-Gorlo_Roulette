@@ -1,0 +1,54 @@
+dialog::backdrop {
+    backdrop-filter: blur(1px);
+}
+
+:root {
+    --add-color: #52c1e3;
+}
+
+.cinema {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+
+.cinema__add-btn {
+    margin: 0;
+    padding: 17px 21px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    background: var(--add-color);
+    border-radius: 7px;
+}
+
+.movie-modal {
+    border: none;
+    border-radius: 10px;
+}
+
+.movie-modal__inp {
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+.movie-modal__btns {
+    display: flex;
+    gap: 10px;
+}
+
+.movie-modal__btn {
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.movie-modal__btn-add {
+    background-color: var(--add-color);
+}
+
+.movie-modal__btn-cancel {
+    background-color: rgb(212, 64, 64);
+}

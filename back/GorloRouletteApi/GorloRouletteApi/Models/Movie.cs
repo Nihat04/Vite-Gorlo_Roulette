@@ -19,8 +19,8 @@ namespace GorloRouletteApi.Models
 
         public int CinemaId { get; set; }
 
-        [JsonIgnore]
         [ForeignKey(nameof(CinemaId))]
+        [JsonIgnore]
         public Cinema cinema { get; set; }
     }
 }

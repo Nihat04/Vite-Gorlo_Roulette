@@ -1,6 +1,4 @@
-import React from 'react';
 import styles from './Header.module.css';
-import classNames from 'classnames';
 
 const Header = () => {
     return (
@@ -22,8 +20,8 @@ const Header = () => {
                     />
                 </svg>
             </button>
-            <div className={styles['logo']}>Gorlo Roulette</div>
-            <div className={styles['beta-logo']}>beta</div>
+            <div className={styles['logo']}>Couple Movies</div>
+            <div className={styles['beta-logo']}>alpha</div>
         </header>
     );
 };

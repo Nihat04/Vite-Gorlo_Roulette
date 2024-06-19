@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GorloRouletteApi.Migrations
 {
     [DbContext(typeof(GorloRouletteDbContext))]
-    [Migration("20240515164129_init")]
+    [Migration("20240609151857_init")]
     partial class init
     {
         /// <inheritdoc />

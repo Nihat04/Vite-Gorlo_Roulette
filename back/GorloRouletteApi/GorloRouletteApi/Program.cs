@@ -23,9 +23,10 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: _allowedOrigins, policy =>
     {
-        policy.WithOrigins("0.0.0.0:5173")
+        policy.WithOrigins("https://gorlo-games.ru")
+            .AllowAnyOrigin()
             .AllowAnyHeader()
-            .AllowAnyOrigin();
+            .AllowAnyMethod();
     });
 });
 

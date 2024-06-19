@@ -14,9 +14,8 @@
 
 .logo__beta {
     display: flex;
+    padding: 5px;
     margin: 0;
-    width: 66px;
-    height: 28px;
     justify-content: center;
     align-items: center;
     color: #fff;
